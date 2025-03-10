@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Farbersetzung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SVG Farbersetzung</h1>
+        <div class="color-replacement">
+            <h2>Farben ersetzen</h2>
+            <div id="colorInputs">
+                <div class="color-input">
+                    <div class="color-preview" style="background-color: #6f00ff;"></div>
+                    <input type="text" placeholder="#6F00FF" data-original-color="#6f00ff">
+                </div>
+                <div class="color-input">
+                    <div class="color-preview" style="background-color: #3d0181;"></div>
+                    <input type="text" placeholder="#3D0181" data-original-color="#3d0181">
+                </div>
+                <div class="color-input">
+                    <div class="color-preview" style="background-color: #FFFFFF;"></div>
+                    <input type="text" placeholder="#FFFFFF" data-original-color="#FFFFFF">
+                </div>
+            </div>
+            <label for="resolution">Auflösung (in Pixel):</label>
+            <input type="number" id="resolution" value="500" min="100" max="2000">
+            <button id="applyChanges">Änderungen anwenden</button>
+        </div>
+
+        <div class="gallery">
+            <h2>SVG Galerie</h2>
+            <div id="svgGallery"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
