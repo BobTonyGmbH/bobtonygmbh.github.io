@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const applyChangesButton = document.getElementById('applyChanges');
     const resolutionInput = document.getElementById('resolution');
 
-    const svgFolder = 'bobtonylogo/svgs/';
+    const svgFolder = './svgs/';
 
     const originalSVGs = {};
     const editedSVGs = {};
